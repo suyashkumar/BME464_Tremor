@@ -24,6 +24,10 @@
 
 #include "RTIMULib/RTIMULib.h"
 #include "stdio.h"
+#include "mraa.h"
+#include <unistd.h>
+#include <iostream>
+#include <exception>
 int main()
 {
     int sampleCount = 0;
@@ -63,6 +67,17 @@ int main()
 
     rateTimer = displayTimer = RTMath::currentUSecsSinceEpoch();
 
+    // Set up serial out
+    mraa_uart_context uart;
+    //uart = mraa_uart_init(0);
+    uart=mraa_uart_init_raw("/dev/ttyGS0");
+	mraa_uart_set_baudrate(uart, 9600);
+	if (uart == NULL) {
+		fprintf(stderr, "UART failed to setup\n");
+		return 0;
+	}
+	char buffer2[20]={}; // To hold output
+
     //  now just process data
 
     while (1) {
@@ -73,16 +88,14 @@ int main()
         while (imu->IMURead()) {
             RTIMU_DATA imuData = imu->getIMUData();
 
-
-
-
-
-            	sleep(1);
+            	//sleep(1);
                 printf("Sample rate %d: %s\r", sampleRate, RTMath::displayDegrees("", imuData.fusionPose) );
                 //printf("\nx %f ",imuData.gyro.x()*(180.0/3.14));
                 //printf("\ny %f ",imuData.gyro.y()*(180.0/3.14));
                 //printf("\nz %f\n",imuData.gyro.z()*(180.0/3.14));
 
+                sprintf(buffer2,"%4f\n",imuData.fusionPose.x()*(180.0/3.14));
+                mraa_uart_write(uart, buffer2, sizeof(buffer2));
 
                 printf("\n\n");
                 //imuData.
@@ -92,5 +105,8 @@ int main()
 
 
         }
+
     }
+    mraa_uart_stop(uart);
+  	mraa_deinit();
 }
