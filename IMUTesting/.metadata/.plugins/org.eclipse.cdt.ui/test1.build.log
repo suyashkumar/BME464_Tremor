@@ -1,0 +1,7 @@
+17:52:11 **** Rebuild of configuration Debug for project test1 ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/test1.o ../src/test1.cpp 
+i586-poky-linux-g++ --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -lmraa -o test1 src/test1.o 
+
+17:52:12 Build Finished (took 645ms)
+

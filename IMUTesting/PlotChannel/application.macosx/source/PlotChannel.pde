@@ -33,7 +33,7 @@ void serialEvent (Serial myPort) {
                  //inString=inString.substring(1,5);
                  System.out.println(inString);
 		 float inByte = float(inString); 
-		 inByte = map(inByte, -20, 90, 0, height);
+		 inByte = map(inByte, -180, 180, 0, height);
 		 
 		 // draw the line:
 		 stroke(127,34,255);

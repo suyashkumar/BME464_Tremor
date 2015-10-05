@@ -63,11 +63,8 @@ int main()
     imu->setAccelEnable(true);
     imu->setCompassEnable(true);
 
-    //  set up for rate timer
 
-    rateTimer = displayTimer = RTMath::currentUSecsSinceEpoch();
-
-    // Set up serial out
+    // Set up serial out UART ports
     mraa_uart_context uart;
     //uart = mraa_uart_init(0);
     uart=mraa_uart_init_raw("/dev/ttyGS0");
@@ -76,26 +73,23 @@ int main()
 		fprintf(stderr, "UART failed to setup\n");
 		return 0;
 	}
-	char buffer2[20]={}; // To hold output
+	char buffer[20]={}; // To hold output
 
-    //  now just process data
+
 
     while (1) {
-        //  poll at the rate recommended by the IMU
-
-        usleep(1000);
 
         while (imu->IMURead()) {
             RTIMU_DATA imuData = imu->getIMUData();
 
             	//sleep(1);
-                printf("Sample rate %d: %s\r", sampleRate, RTMath::displayDegrees("", imuData.fusionPose) );
+                printf("%s\r", RTMath::displayDegrees("Gyro", imuData.fusionPose) );
                 //printf("\nx %f ",imuData.gyro.x()*(180.0/3.14));
                 //printf("\ny %f ",imuData.gyro.y()*(180.0/3.14));
                 //printf("\nz %f\n",imuData.gyro.z()*(180.0/3.14));
 
-                sprintf(buffer2,"%4f\n",imuData.fusionPose.x()*(180.0/3.14));
-                mraa_uart_write(uart, buffer2, sizeof(buffer2));
+                sprintf(buffer,"%4f\n",imuData.fusionPose.x()*(180.0/3.14));
+                mraa_uart_write(uart, buffer, sizeof(buffer));
 
                 printf("\n\n");
                 //imuData.
