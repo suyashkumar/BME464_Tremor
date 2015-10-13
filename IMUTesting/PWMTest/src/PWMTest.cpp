@@ -1,12 +1,14 @@
 #include <iostream>
 #include <string.h>
+#include <time.h>
 #include <mraa.hpp>
 
 
 int main() {
 
 	mraa::Pwm* pwm;
-	pwm = new mraa::Pwm(6);
+	pwm = new mraa::Pwm(0);
+	clock_t t;
 	if (pwm == NULL) {
 		return MRAA_ERROR_UNSPECIFIED;
 	}
@@ -20,8 +22,12 @@ int main() {
 	  std::cout << "Type new duty cycle: ";
 	  std::cin >> buffer;
 	  duty_cycle=atof(buffer);
-	  pwm->config_percent(1,duty_cycle); // Write 50% duty cycle period of 1ms
 
+	  t = clock();
+	  pwm->config_percent(1,duty_cycle); // Write 50% duty cycle period of 1ms
+	  t = clock() - t;
+	  double time_taken = ((double)t)/CLOCKS_PER_SEC; // in seconds
+	  printf("Time taken to write: %f seconds\n", time_taken);
 	  //pwm->period_us(500);
 
 	  usleep(1000);
