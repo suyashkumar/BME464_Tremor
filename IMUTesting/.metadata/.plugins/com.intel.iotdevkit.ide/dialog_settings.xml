@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="suyashEdison" key="com.intel.iotdevkit.ide.SSHConnectionNameKey"/>
-	<item value="10.190.199.168" key="com.intel.iotdevkit.ide.SSHIPAddressKey"/>
+	<item value="upliftEdison" key="com.intel.iotdevkit.ide.SSHConnectionNameKey"/>
+	<item value="10.190.81.83" key="com.intel.iotdevkit.ide.SSHIPAddressKey"/>
 </section>

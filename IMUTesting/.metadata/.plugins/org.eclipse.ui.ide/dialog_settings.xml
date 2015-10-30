@@ -5,6 +5,9 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/Users/suyashkumar/Dropbox/Duke/Classes/FallSenior/BME464/BME464_Tremor/IMUTesting/MotorControl"/>
+			<item value="/Users/suyashkumar/Dropbox/Duke/Classes/FallSenior/BME464/BME464_Tremor/IMUTesting/IMUData_MotorControl2"/>
+			<item value="/Users/suyashkumar/Dropbox/Duke/Classes/FallSenior/BME464/BME464_Tremor/IMUTesting/IMUData_MotorControl"/>
 			<item value="/Users/suyashkumar/Dropbox/Duke/Classes/FallSenior/BME464/BME464_Tremor/IMUTesting/IMUData"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
