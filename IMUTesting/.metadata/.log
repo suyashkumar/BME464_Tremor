@@ -1164,3 +1164,23 @@ Binding(ALT+COMMAND+I,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.cdt.ui.cViewScope,,,system)
+!SESSION 2015-11-08 20:17:59.997 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_20
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/suyashkumar/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/suyashkumar/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2015-11-08 20:18:05.590
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2015-11-09 10:55:36.046 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_20
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/suyashkumar/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/suyashkumar/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2015-11-09 10:55:41.187
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
