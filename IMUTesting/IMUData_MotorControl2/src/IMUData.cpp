@@ -1,27 +1,3 @@
-////////////////////////////////////////////////////////////////////////////
-//
-//  This file is part of RTIMULib
-//
-//  Copyright (c) 2014-2015, richards-tech, LLC
-//
-//  Permission is hereby granted, free of charge, to any person obtaining a copy of
-//  this software and associated documentation files (the "Software"), to deal in
-//  the Software without restriction, including without limitation the rights to use,
-//  copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the
-//  Software, and to permit persons to whom the Software is furnished to do so,
-//  subject to the following conditions:
-//
-//  The above copyright notice and this permission notice shall be included in all
-//  copies or substantial portions of the Software.
-//
-//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
-//  INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
-//  PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
-//  HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
-//  OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-//  SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
 #include "RTIMULib/RTIMULib.h"
 #include "stdio.h"
 #include "mraa.h"
@@ -30,32 +6,45 @@
 #include <iostream>
 #include <exception>
 #include <fstream>
+#include <ctime>
+#include <string>
+#include <queue>
+#include <sys/time.h>
 
 // Forward function declarations:
 mraa::Pwm* initPwm(int pin);
+RTIMU* initImu();
 float calculateDutyCycle(float deflection);
 void motorControl(RTIMU_DATA imuData, mraa::Pwm* pwm);
+void writeToCSV(float current_reading);
+long long current_timestamp();
+float runningDeflectionAverage(float sample);
 
+char buffer[20]={}; // for logging
+long long counter=0; // Current number of sample
+char saveName[50]={};
+std::clock_t a = std::clock();
+
+float currentAverage=0;
+std::queue <float> prevSamples;
+
+int samplesSeen=1;
+int runningAvgSamples=50;
 
 int main()
 {
 	// Parameter declaration, initiation:
     int sampleCount = 0;
     int sampleRate = 0;
+    long long currentTime=current_timestamp();
+    sprintf(saveName,"static/data/%lld.csv",currentTime); // CSV file name
+    prevSamples.push(0.0);
 
     mraa::Pwm* pwm = initPwm(0); // Initialize PWM Object
+	RTIMU *imu = initImu(); // Initialize IMU Object
 
-    RTIMUSettings *settings = new RTIMUSettings("RTIMULib");
-    RTIMU *imu = RTIMU::createIMU(settings);
-    if ((imu == NULL) || (imu->IMUType() == RTIMU_TYPE_NULL)) {
-        printf("No IMU found\n");
-        exit(1);
-    }
 
-    // IMU Init:
-    imu->IMUInit();
-    imu->setSlerpPower(0.02);
-    imu->setGyroEnable(true);
+
 
     // Main loop:
     while (1) {
@@ -64,7 +53,7 @@ int main()
             motorControl(imuData,pwm); // Update motor position
         }
     }
-    //mraa_uart_stop(uart);
+
   	mraa_deinit();
 }
 /*
@@ -90,6 +79,24 @@ mraa::Pwm* initPwm(int pin){
 
 }
 /*
+ *
+ */
+RTIMU* initImu(){
+	RTIMUSettings *settings = new RTIMUSettings("RTIMULib");
+	RTIMU *imu = RTIMU::createIMU(settings);
+	if ((imu == NULL) || (imu->IMUType() == RTIMU_TYPE_NULL)) {
+		printf("No IMU found\n");
+		exit(1);
+	}
+
+	// IMU Init:
+	imu->IMUInit();
+	imu->setSlerpPower(0.02);
+	imu->setGyroEnable(true);
+	return imu;
+
+}
+/*
  * calculateDutyCycle()
  * Calculates the duty cycle needed to move our servo to the provided deflection.
  * @param deflection the input angular deflection
@@ -110,23 +117,55 @@ float calculateDutyCycle(float deflection){
  * @param pwm the PWM control object that writes the motor control signal.
  */
 void motorControl(RTIMU_DATA imuData, mraa::Pwm* pwm){
-	std::ofstream logfile ("lastRun2.csv",std::ios::app);
 	printf("%s\r", RTMath::displayDegrees("Gyro", imuData.fusionPose));
 	float current_reading=imuData.fusionPose.y()*(180.0/3.14);
-	char buffer[20]={};
-	sprintf(buffer,"%f,",current_reading);
-
-	logfile << buffer;
-	            //mraa_uart_write(uart, buffer, sizeof(buffer)); // Write to UART
-	            //duty_cycle=((current_reading/90)*0.05)+0.05;
+	writeToCSV(current_reading);
 	float duty_cycle=calculateDutyCycle(current_reading);
-	//printf("\nDuty cycle: %f\n",duty_cycle);
 	pwm->config_percent(3,duty_cycle); // Write duty_cycle with period of 1ms
 	printf("\n\n");
-	logfile.close();
+	printf("Running Average %f",runningDeflectionAverage(current_reading));
 	fflush(stdout);
 }
+/*
+ * writeToCSV()
+ * Writes the current
+ */
+void writeToCSV(float current_reading){
+	std::ofstream logfile (saveName,std::ios::app);
+	sprintf(buffer,"%lli,%f\n",counter,current_reading);
+	logfile << buffer;
+	logfile.close();
+	counter++;
+}
 
+float runningDeflectionAverage(float sample){
+	if (samplesSeen>runningAvgSamples){
+		// do normal stuff
+		float oldestSample=0;
+		oldestSample=(float)prevSamples.front();
+		prevSamples.pop();
+		currentAverage=currentAverage-(oldestSample/runningAvgSamples);
+		currentAverage=currentAverage+(sample/runningAvgSamples);
+		prevSamples.push(sample); // add sample to queue
+		return currentAverage;
+	}
+	else{
+		prevSamples.push(sample); // add to queue
+		samplesSeen++;
+		currentAverage=(currentAverage+sample)/(samplesSeen+1));
+		return sample;
+	}
+
+
+}
+
+long long current_timestamp() {
+    struct timeval te;
+    gettimeofday(&te, NULL); // get current time
+    long long milliseconds = te.tv_sec*1000LL + te.tv_usec/1000; // caculate milliseconds
+    printf("milliseconds: %lld\n", milliseconds);
+    return milliseconds;
+}
 
 
 

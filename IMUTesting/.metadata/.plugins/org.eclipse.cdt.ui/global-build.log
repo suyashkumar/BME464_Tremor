@@ -44,3 +44,778 @@ i586-poky-linux-g++ --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-
 Info: Nothing to build for MotorControl
 Info: Nothing to build for PWMTest
 Info: Nothing to build for test1
+11:24:55 **** Incremental Build of configuration Debug for project IMUData ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTMath.o ../src/RTIMULib/RTMath.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUGD20HM303D.o ../src/RTIMULib/RTIMUGD20HM303D.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTHumidityHTS221.o ../src/RTIMULib/RTHumidityHTS221.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTPressureMS5637.o ../src/RTIMULib/RTPressureMS5637.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTFusion.o ../src/RTIMULib/RTFusion.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUMPU9250.o ../src/RTIMULib/RTIMUMPU9250.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUBMX055.o ../src/RTIMULib/RTIMUBMX055.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:33:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:34:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+../src/IMUData.cpp:35:14: warning: unused variable 'rateTimer' [-Wunused-variable]
+     uint64_t rateTimer;
+              ^
+../src/IMUData.cpp:36:14: warning: unused variable 'displayTimer' [-Wunused-variable]
+     uint64_t displayTimer;
+              ^
+../src/IMUData.cpp:37:14: warning: unused variable 'now' [-Wunused-variable]
+     uint64_t now;
+              ^
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTHumidity.o ../src/RTIMULib/RTHumidity.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUMPU9150.o ../src/RTIMULib/RTIMUMPU9150.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTPressureMS5611.o ../src/RTIMULib/RTPressureMS5611.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTPressure.o ../src/RTIMULib/RTPressure.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTFusionKalman4.o ../src/RTIMULib/RTFusionKalman4.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUGD20HM303DLHC.o ../src/RTIMULib/RTIMUGD20HM303DLHC.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTHumidityHTU21D.o ../src/RTIMULib/RTHumidityHTU21D.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMU.o ../src/RTIMULib/RTIMU.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTPressureBMP180.o ../src/RTIMULib/RTPressureBMP180.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMULSM9DS1.o ../src/RTIMULib/RTIMULSM9DS1.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUHal.o ../src/RTIMULib/RTIMUHal.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTPressureLPS25H.o ../src/RTIMULib/RTPressureLPS25H.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUAccelCal.o ../src/RTIMULib/RTIMUAccelCal.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUMagCal.o ../src/RTIMULib/RTIMUMagCal.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTFusionRTQF.o ../src/RTIMULib/RTFusionRTQF.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUBNO055.o ../src/RTIMULib/RTIMUBNO055.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUNull.o ../src/RTIMULib/RTIMUNull.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUGD20M303DLHC.o ../src/RTIMULib/RTIMUGD20M303DLHC.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUSettings.o ../src/RTIMULib/RTIMUSettings.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMULSM9DS0.o ../src/RTIMULib/RTIMULSM9DS0.cpp 
+i586-poky-linux-g++ --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -lmraa -o IMUData src/RTIMULib/RTPressureMS5637.o src/RTIMULib/RTPressureMS5611.o src/RTIMULib/RTPressureLPS25H.o src/RTIMULib/RTPressureBMP180.o src/RTIMULib/RTPressure.o src/RTIMULib/RTMath.o src/RTIMULib/RTIMUSettings.o src/RTIMULib/RTIMUNull.o src/RTIMULib/RTIMUMagCal.o src/RTIMULib/RTIMUMPU9250.o src/RTIMULib/RTIMUMPU9150.o src/RTIMULib/RTIMULSM9DS1.o src/RTIMULib/RTIMULSM9DS0.o src/RTIMULib/RTIMUHal.o src/RTIMULib/RTIMUGD20M303DLHC.o src/RTIMULib/RTIMUGD20HM303DLHC.o src/RTIMULib/RTIMUGD20HM303D.o src/RTIMULib/RTIMUBNO055.o src/RTIMULib/RTIMUBMX055.o src/RTIMULib/RTIMUAccelCal.o src/RTIMULib/RTIMU.o src/RTIMULib/RTHumidityHTU21D.o src/RTIMULib/RTHumidityHTS221.o src/RTIMULib/RTHumidity.o src/RTIMULib/RTFusionRTQF.o src/RTIMULib/RTFusionKalman4.o src/RTIMULib/RTFusion.o src/IMUData.o 
+11:25:03 **** Incremental Build of configuration Debug for project IMUData_MotorControl ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTHumidity.o ../src/RTIMULib/RTHumidity.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUGD20HM303D.o ../src/RTIMULib/RTIMUGD20HM303D.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUGD20M303DLHC.o ../src/RTIMULib/RTIMUGD20M303DLHC.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUSettings.o ../src/RTIMULib/RTIMUSettings.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUBMX055.o ../src/RTIMULib/RTIMUBMX055.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMULSM9DS0.o ../src/RTIMULib/RTIMULSM9DS0.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUMagCal.o ../src/RTIMULib/RTIMUMagCal.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTPressureBMP180.o ../src/RTIMULib/RTPressureBMP180.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMULSM9DS1.o ../src/RTIMULib/RTIMULSM9DS1.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTPressure.o ../src/RTIMULib/RTPressure.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTHumidityHTU21D.o ../src/RTIMULib/RTHumidityHTU21D.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTFusionKalman4.o ../src/RTIMULib/RTFusionKalman4.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:34:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:35:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+../src/IMUData.cpp:36:14: warning: unused variable 'rateTimer' [-Wunused-variable]
+     uint64_t rateTimer;
+              ^
+../src/IMUData.cpp:37:14: warning: unused variable 'displayTimer' [-Wunused-variable]
+     uint64_t displayTimer;
+              ^
+../src/IMUData.cpp:38:14: warning: unused variable 'now' [-Wunused-variable]
+     uint64_t now;
+              ^
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUNull.o ../src/RTIMULib/RTIMUNull.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTPressureMS5611.o ../src/RTIMULib/RTPressureMS5611.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUMPU9150.o ../src/RTIMULib/RTIMUMPU9150.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTPressureLPS25H.o ../src/RTIMULib/RTPressureLPS25H.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTFusionRTQF.o ../src/RTIMULib/RTFusionRTQF.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUAccelCal.o ../src/RTIMULib/RTIMUAccelCal.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUGD20HM303DLHC.o ../src/RTIMULib/RTIMUGD20HM303DLHC.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUMPU9250.o ../src/RTIMULib/RTIMUMPU9250.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTHumidityHTS221.o ../src/RTIMULib/RTHumidityHTS221.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTMath.o ../src/RTIMULib/RTMath.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUBNO055.o ../src/RTIMULib/RTIMUBNO055.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTFusion.o ../src/RTIMULib/RTFusion.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTPressureMS5637.o ../src/RTIMULib/RTPressureMS5637.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUHal.o ../src/RTIMULib/RTIMUHal.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMU.o ../src/RTIMULib/RTIMU.cpp 
+i586-poky-linux-g++ --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -lmraa -o IMUData_MotorControl src/RTIMULib/RTPressureMS5637.o src/RTIMULib/RTPressureMS5611.o src/RTIMULib/RTPressureLPS25H.o src/RTIMULib/RTPressureBMP180.o src/RTIMULib/RTPressure.o src/RTIMULib/RTMath.o src/RTIMULib/RTIMUSettings.o src/RTIMULib/RTIMUNull.o src/RTIMULib/RTIMUMagCal.o src/RTIMULib/RTIMUMPU9250.o src/RTIMULib/RTIMUMPU9150.o src/RTIMULib/RTIMULSM9DS1.o src/RTIMULib/RTIMULSM9DS0.o src/RTIMULib/RTIMUHal.o src/RTIMULib/RTIMUGD20M303DLHC.o src/RTIMULib/RTIMUGD20HM303DLHC.o src/RTIMULib/RTIMUGD20HM303D.o src/RTIMULib/RTIMUBNO055.o src/RTIMULib/RTIMUBMX055.o src/RTIMULib/RTIMUAccelCal.o src/RTIMULib/RTIMU.o src/RTIMULib/RTHumidityHTU21D.o src/RTIMULib/RTHumidityHTS221.o src/RTIMULib/RTHumidity.o src/RTIMULib/RTFusionRTQF.o src/RTIMULib/RTFusionKalman4.o src/RTIMULib/RTFusion.o src/IMUData.o 
+11:25:11 **** Incremental Build of configuration Debug for project IMUData_MotorControl2 ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMULSM9DS1.o ../src/RTIMULib/RTIMULSM9DS1.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTPressure.o ../src/RTIMULib/RTPressure.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUAccelCal.o ../src/RTIMULib/RTIMUAccelCal.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUGD20HM303D.o ../src/RTIMULib/RTIMUGD20HM303D.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTPressureMS5611.o ../src/RTIMULib/RTPressureMS5611.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUGD20HM303DLHC.o ../src/RTIMULib/RTIMUGD20HM303DLHC.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUMPU9250.o ../src/RTIMULib/RTIMUMPU9250.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUBMX055.o ../src/RTIMULib/RTIMUBMX055.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTFusionRTQF.o ../src/RTIMULib/RTFusionRTQF.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTPressureMS5637.o ../src/RTIMULib/RTPressureMS5637.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUBNO055.o ../src/RTIMULib/RTIMUBNO055.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTFusionKalman4.o ../src/RTIMULib/RTFusionKalman4.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUNull.o ../src/RTIMULib/RTIMUNull.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUGD20M303DLHC.o ../src/RTIMULib/RTIMUGD20M303DLHC.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMULSM9DS0.o ../src/RTIMULib/RTIMULSM9DS0.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUMPU9150.o ../src/RTIMULib/RTIMUMPU9150.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTHumidity.o ../src/RTIMULib/RTHumidity.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMU.o ../src/RTIMULib/RTIMU.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTPressureBMP180.o ../src/RTIMULib/RTPressureBMP180.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUHal.o ../src/RTIMULib/RTIMUHal.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTHumidityHTU21D.o ../src/RTIMULib/RTHumidityHTU21D.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTMath.o ../src/RTIMULib/RTMath.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUMagCal.o ../src/RTIMULib/RTIMUMagCal.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:25:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:26:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+../src/IMUData.cpp: In function 'void writeToCSV(float)':
+../src/IMUData.cpp:121:50: warning: format '%i' expects argument of type 'int', but argument 3 has type 'long long int' [-Wformat=]
+  sprintf(buffer,"%i,%f\n",counter,current_reading);
+                                                  ^
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTFusion.o ../src/RTIMULib/RTFusion.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTPressureLPS25H.o ../src/RTIMULib/RTPressureLPS25H.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTIMUSettings.o ../src/RTIMULib/RTIMUSettings.cpp 
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/RTIMULib/RTHumidityHTS221.o ../src/RTIMULib/RTHumidityHTS221.cpp 
+i586-poky-linux-g++ --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -lmraa -o IMUData_MotorControl2 src/RTIMULib/RTPressureMS5637.o src/RTIMULib/RTPressureMS5611.o src/RTIMULib/RTPressureLPS25H.o src/RTIMULib/RTPressureBMP180.o src/RTIMULib/RTPressure.o src/RTIMULib/RTMath.o src/RTIMULib/RTIMUSettings.o src/RTIMULib/RTIMUNull.o src/RTIMULib/RTIMUMagCal.o src/RTIMULib/RTIMUMPU9250.o src/RTIMULib/RTIMUMPU9150.o src/RTIMULib/RTIMULSM9DS1.o src/RTIMULib/RTIMULSM9DS0.o src/RTIMULib/RTIMUHal.o src/RTIMULib/RTIMUGD20M303DLHC.o src/RTIMULib/RTIMUGD20HM303DLHC.o src/RTIMULib/RTIMUGD20HM303D.o src/RTIMULib/RTIMUBNO055.o src/RTIMULib/RTIMUBMX055.o src/RTIMULib/RTIMUAccelCal.o src/RTIMULib/RTIMU.o src/RTIMULib/RTHumidityHTU21D.o src/RTIMULib/RTHumidityHTS221.o src/RTIMULib/RTHumidity.o src/RTIMULib/RTFusionRTQF.o src/RTIMULib/RTFusionKalman4.o src/RTIMULib/RTFusion.o src/IMUData.o 
+11:25:18 **** Incremental Build of configuration Debug for project MotorControl ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/PWMTest.o ../src/PWMTest.cpp 
+../src/PWMTest.cpp: In function 'int main()':
+../src/PWMTest.cpp:11:10: warning: unused variable 't' [-Wunused-variable]
+  clock_t t;
+          ^
+../src/PWMTest.cpp:19:7: warning: unused variable 'buffer' [-Wunused-variable]
+  char buffer[20];
+       ^
+../src/PWMTest.cpp:20:8: warning: unused variable 'duty_cycle' [-Wunused-variable]
+  float duty_cycle=0.5;
+        ^
+i586-poky-linux-g++ --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -lmraa -o MotorControl src/PWMTest.o 
+11:25:19 **** Incremental Build of configuration Debug for project PWMTest ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/PWMTest.o ../src/PWMTest.cpp 
+i586-poky-linux-g++ --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -lmraa -o PWMTest src/PWMTest.o 
+Info: Nothing to build for test1
+Info: Nothing to build for IMUData
+Info: Nothing to build for IMUData_MotorControl
+17:18:01 **** Incremental Build of configuration Debug for project IMUData_MotorControl2 ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp:9:19: warning: extra tokens at end of #include directive
+ #include "time.h" time_t seconds;
+                   ^
+../src/IMUData.cpp:24:5: error: expected constructor, destructor, or type conversion before '(' token
+ time(&seconds);
+     ^
+../src/IMUData.cpp:25:49: error: 'seconds' was not declared in this scope
+ unsigned long long millis = (unsigned long long)seconds * 1000;
+                                                 ^
+../src/IMUData.cpp:27:8: error: expected constructor, destructor, or type conversion before '(' token
+ sprintf(name,"%lld",millis);
+        ^
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:32:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:33:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+Info: Nothing to build for MotorControl
+Info: Nothing to build for PWMTest
+Info: Nothing to build for test1
+Info: Nothing to build for IMUData
+Info: Nothing to build for IMUData_MotorControl
+17:18:32 **** Incremental Build of configuration Debug for project IMUData_MotorControl2 ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp:24:5: error: expected constructor, destructor, or type conversion before '(' token
+ time(&seconds);
+     ^
+../src/IMUData.cpp:27:8: error: expected constructor, destructor, or type conversion before '(' token
+ sprintf(name,"%lli",millis);
+        ^
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:32:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:33:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+Info: Nothing to build for MotorControl
+Info: Nothing to build for PWMTest
+Info: Nothing to build for test1
+Info: Nothing to build for IMUData
+Info: Nothing to build for IMUData_MotorControl
+17:20:37 **** Incremental Build of configuration Debug for project IMUData_MotorControl2 ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp:24:5: error: expected constructor, destructor, or type conversion before '(' token
+ time(&seconds);
+     ^
+../src/IMUData.cpp:27:8: error: expected constructor, destructor, or type conversion before '(' token
+ sprintf(name,"%lli",millis);
+        ^
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:32:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:33:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+Info: Nothing to build for MotorControl
+Info: Nothing to build for PWMTest
+Info: Nothing to build for test1
+Info: Nothing to build for IMUData
+Info: Nothing to build for IMUData_MotorControl
+17:21:16 **** Incremental Build of configuration Debug for project IMUData_MotorControl2 ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp:24:5: error: expected constructor, destructor, or type conversion before '(' token
+ time(&seconds);
+     ^
+../src/IMUData.cpp:27:8: error: expected constructor, destructor, or type conversion before '(' token
+ sprintf(name,"%lli",millis);
+        ^
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:32:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:33:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+Info: Nothing to build for MotorControl
+Info: Nothing to build for PWMTest
+Info: Nothing to build for test1
+Info: Nothing to build for IMUData
+Info: Nothing to build for IMUData_MotorControl
+17:21:19 **** Incremental Build of configuration Debug for project IMUData_MotorControl2 ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp:25:8: error: expected constructor, destructor, or type conversion before '(' token
+ sprintf(name,"%lli",millis);
+        ^
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:31:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:32:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+Info: Nothing to build for MotorControl
+Info: Nothing to build for PWMTest
+Info: Nothing to build for test1
+Info: Nothing to build for IMUData
+Info: Nothing to build for IMUData_MotorControl
+17:21:54 **** Incremental Build of configuration Debug for project IMUData_MotorControl2 ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp:26:8: error: expected constructor, destructor, or type conversion before '(' token
+ sprintf(name,"%lli",a);
+        ^
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:32:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:33:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+Info: Nothing to build for MotorControl
+Info: Nothing to build for PWMTest
+Info: Nothing to build for test1
+Info: Nothing to build for IMUData
+Info: Nothing to build for IMUData_MotorControl
+17:23:57 **** Incremental Build of configuration Debug for project IMUData_MotorControl2 ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp:26:8: error: expected constructor, destructor, or type conversion before '(' token
+ sprintf(name,"%lli",t);
+        ^
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:32:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:33:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+Info: Nothing to build for MotorControl
+Info: Nothing to build for PWMTest
+Info: Nothing to build for test1
+Info: Nothing to build for IMUData
+Info: Nothing to build for IMUData_MotorControl
+17:24:08 **** Incremental Build of configuration Debug for project IMUData_MotorControl2 ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp:26:8: error: expected constructor, destructor, or type conversion before '(' token
+ sprintf(name,"%lli",t);
+        ^
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:32:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:33:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+Info: Nothing to build for MotorControl
+Info: Nothing to build for PWMTest
+Info: Nothing to build for test1
+Info: Nothing to build for IMUData
+Info: Nothing to build for IMUData_MotorControl
+17:24:18 **** Incremental Build of configuration Debug for project IMUData_MotorControl2 ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp:27:8: error: expected constructor, destructor, or type conversion before '(' token
+ sprintf(name,"%lli",t);
+        ^
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:33:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:34:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+Info: Nothing to build for MotorControl
+Info: Nothing to build for PWMTest
+Info: Nothing to build for test1
+Info: Nothing to build for IMUData
+Info: Nothing to build for IMUData_MotorControl
+17:24:37 **** Incremental Build of configuration Debug for project IMUData_MotorControl2 ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp:27:8: error: expected constructor, destructor, or type conversion before '(' token
+ sprintf(name,"%i",t);
+        ^
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:33:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:34:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+Info: Nothing to build for MotorControl
+Info: Nothing to build for PWMTest
+Info: Nothing to build for test1
+Info: Nothing to build for IMUData
+Info: Nothing to build for IMUData_MotorControl
+17:24:44 **** Incremental Build of configuration Debug for project IMUData_MotorControl2 ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp:27:8: error: expected constructor, destructor, or type conversion before '(' token
+ sprintf(name,"%i",t);
+        ^
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:33:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:34:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+Info: Nothing to build for MotorControl
+Info: Nothing to build for PWMTest
+Info: Nothing to build for test1
+Info: Nothing to build for IMUData
+Info: Nothing to build for IMUData_MotorControl
+17:26:54 **** Incremental Build of configuration Debug for project IMUData_MotorControl2 ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp:25:31: error: 'current_timestamp' was not declared in this scope
+ long long t=current_timestamp();
+                               ^
+../src/IMUData.cpp:26:8: error: expected constructor, destructor, or type conversion before '(' token
+ sprintf(name,"%lii",t);
+        ^
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:32:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:33:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+Info: Nothing to build for MotorControl
+Info: Nothing to build for PWMTest
+Info: Nothing to build for test1
+Info: Nothing to build for IMUData
+Info: Nothing to build for IMUData_MotorControl
+17:27:16 **** Incremental Build of configuration Debug for project IMUData_MotorControl2 ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp:26:8: error: expected constructor, destructor, or type conversion before '(' token
+ sprintf(name,"%lii",t);
+        ^
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:32:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:33:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+Info: Nothing to build for MotorControl
+Info: Nothing to build for PWMTest
+Info: Nothing to build for test1
+Info: Nothing to build for IMUData
+Info: Nothing to build for IMUData_MotorControl
+17:28:59 **** Incremental Build of configuration Debug for project IMUData_MotorControl2 ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:35:36: warning: format '%li' expects argument of type 'long int', but argument 3 has type 'long long int' [-Wformat=]
+     sprintf(name,"%lii",currentTime);
+                                    ^
+../src/IMUData.cpp:33:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:34:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+i586-poky-linux-g++ --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -lmraa -o IMUData_MotorControl2 src/RTIMULib/RTPressureMS5637.o src/RTIMULib/RTPressureMS5611.o src/RTIMULib/RTPressureLPS25H.o src/RTIMULib/RTPressureBMP180.o src/RTIMULib/RTPressure.o src/RTIMULib/RTMath.o src/RTIMULib/RTIMUSettings.o src/RTIMULib/RTIMUNull.o src/RTIMULib/RTIMUMagCal.o src/RTIMULib/RTIMUMPU9250.o src/RTIMULib/RTIMUMPU9150.o src/RTIMULib/RTIMULSM9DS1.o src/RTIMULib/RTIMULSM9DS0.o src/RTIMULib/RTIMUHal.o src/RTIMULib/RTIMUGD20M303DLHC.o src/RTIMULib/RTIMUGD20HM303DLHC.o src/RTIMULib/RTIMUGD20HM303D.o src/RTIMULib/RTIMUBNO055.o src/RTIMULib/RTIMUBMX055.o src/RTIMULib/RTIMUAccelCal.o src/RTIMULib/RTIMU.o src/RTIMULib/RTHumidityHTU21D.o src/RTIMULib/RTHumidityHTS221.o src/RTIMULib/RTHumidity.o src/RTIMULib/RTFusionRTQF.o src/RTIMULib/RTFusionKalman4.o src/RTIMULib/RTFusion.o src/IMUData.o 
+Info: Nothing to build for MotorControl
+Info: Nothing to build for PWMTest
+Info: Nothing to build for test1
+Info: Nothing to build for IMUData
+Info: Nothing to build for IMUData_MotorControl
+17:29:27 **** Incremental Build of configuration Debug for project IMUData_MotorControl2 ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:35:40: warning: format '%li' expects argument of type 'long int', but argument 3 has type 'long long int' [-Wformat=]
+     sprintf(saveName,"%lii",currentTime);
+                                        ^
+../src/IMUData.cpp:33:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:34:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+i586-poky-linux-g++ --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -lmraa -o IMUData_MotorControl2 src/RTIMULib/RTPressureMS5637.o src/RTIMULib/RTPressureMS5611.o src/RTIMULib/RTPressureLPS25H.o src/RTIMULib/RTPressureBMP180.o src/RTIMULib/RTPressure.o src/RTIMULib/RTMath.o src/RTIMULib/RTIMUSettings.o src/RTIMULib/RTIMUNull.o src/RTIMULib/RTIMUMagCal.o src/RTIMULib/RTIMUMPU9250.o src/RTIMULib/RTIMUMPU9150.o src/RTIMULib/RTIMULSM9DS1.o src/RTIMULib/RTIMULSM9DS0.o src/RTIMULib/RTIMUHal.o src/RTIMULib/RTIMUGD20M303DLHC.o src/RTIMULib/RTIMUGD20HM303DLHC.o src/RTIMULib/RTIMUGD20HM303D.o src/RTIMULib/RTIMUBNO055.o src/RTIMULib/RTIMUBMX055.o src/RTIMULib/RTIMUAccelCal.o src/RTIMULib/RTIMU.o src/RTIMULib/RTHumidityHTU21D.o src/RTIMULib/RTHumidityHTS221.o src/RTIMULib/RTHumidity.o src/RTIMULib/RTFusionRTQF.o src/RTIMULib/RTFusionKalman4.o src/RTIMULib/RTFusion.o src/IMUData.o 
+Info: Nothing to build for MotorControl
+Info: Nothing to build for PWMTest
+Info: Nothing to build for test1
+Info: Nothing to build for IMUData
+Info: Nothing to build for IMUData_MotorControl
+17:29:45 **** Incremental Build of configuration Debug for project IMUData_MotorControl2 ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:35:45: warning: format '%li' expects argument of type 'long int', but argument 3 has type 'long long int' [-Wformat=]
+     sprintf(saveName,"data/%lii",currentTime);
+                                             ^
+../src/IMUData.cpp:33:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:34:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+i586-poky-linux-g++ --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -lmraa -o IMUData_MotorControl2 src/RTIMULib/RTPressureMS5637.o src/RTIMULib/RTPressureMS5611.o src/RTIMULib/RTPressureLPS25H.o src/RTIMULib/RTPressureBMP180.o src/RTIMULib/RTPressure.o src/RTIMULib/RTMath.o src/RTIMULib/RTIMUSettings.o src/RTIMULib/RTIMUNull.o src/RTIMULib/RTIMUMagCal.o src/RTIMULib/RTIMUMPU9250.o src/RTIMULib/RTIMUMPU9150.o src/RTIMULib/RTIMULSM9DS1.o src/RTIMULib/RTIMULSM9DS0.o src/RTIMULib/RTIMUHal.o src/RTIMULib/RTIMUGD20M303DLHC.o src/RTIMULib/RTIMUGD20HM303DLHC.o src/RTIMULib/RTIMUGD20HM303D.o src/RTIMULib/RTIMUBNO055.o src/RTIMULib/RTIMUBMX055.o src/RTIMULib/RTIMUAccelCal.o src/RTIMULib/RTIMU.o src/RTIMULib/RTHumidityHTU21D.o src/RTIMULib/RTHumidityHTS221.o src/RTIMULib/RTHumidity.o src/RTIMULib/RTFusionRTQF.o src/RTIMULib/RTFusionKalman4.o src/RTIMULib/RTFusion.o src/IMUData.o 
+Info: Nothing to build for MotorControl
+Info: Nothing to build for PWMTest
+Info: Nothing to build for test1
+Info: Nothing to build for IMUData
+Info: Nothing to build for IMUData_MotorControl
+Info: Nothing to build for IMUData_MotorControl2
+Info: Nothing to build for MotorControl
+Info: Nothing to build for PWMTest
+Info: Nothing to build for test1
+Info: Nothing to build for IMUData
+Info: Nothing to build for IMUData_MotorControl
+17:33:55 **** Incremental Build of configuration Debug for project IMUData_MotorControl2 ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:35:45: warning: format '%li' expects argument of type 'long int', but argument 3 has type 'long long int' [-Wformat=]
+     sprintf(saveName,"data/%lii",currentTime);
+                                             ^
+../src/IMUData.cpp:33:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:34:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+i586-poky-linux-g++ --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -lmraa -o IMUData_MotorControl2 src/RTIMULib/RTPressureMS5637.o src/RTIMULib/RTPressureMS5611.o src/RTIMULib/RTPressureLPS25H.o src/RTIMULib/RTPressureBMP180.o src/RTIMULib/RTPressure.o src/RTIMULib/RTMath.o src/RTIMULib/RTIMUSettings.o src/RTIMULib/RTIMUNull.o src/RTIMULib/RTIMUMagCal.o src/RTIMULib/RTIMUMPU9250.o src/RTIMULib/RTIMUMPU9150.o src/RTIMULib/RTIMULSM9DS1.o src/RTIMULib/RTIMULSM9DS0.o src/RTIMULib/RTIMUHal.o src/RTIMULib/RTIMUGD20M303DLHC.o src/RTIMULib/RTIMUGD20HM303DLHC.o src/RTIMULib/RTIMUGD20HM303D.o src/RTIMULib/RTIMUBNO055.o src/RTIMULib/RTIMUBMX055.o src/RTIMULib/RTIMUAccelCal.o src/RTIMULib/RTIMU.o src/RTIMULib/RTHumidityHTU21D.o src/RTIMULib/RTHumidityHTS221.o src/RTIMULib/RTHumidity.o src/RTIMULib/RTFusionRTQF.o src/RTIMULib/RTFusionKalman4.o src/RTIMULib/RTFusion.o src/IMUData.o 
+Info: Nothing to build for MotorControl
+Info: Nothing to build for PWMTest
+Info: Nothing to build for test1
+Info: Nothing to build for IMUData
+Info: Nothing to build for IMUData_MotorControl
+17:35:19 **** Incremental Build of configuration Debug for project IMUData_MotorControl2 ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:36:45: warning: format '%li' expects argument of type 'long int', but argument 3 has type 'long long int' [-Wformat=]
+     sprintf(saveName,"data/%lii",currentTime);
+                                             ^
+../src/IMUData.cpp:33:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:34:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+i586-poky-linux-g++ --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -lmraa -o IMUData_MotorControl2 src/RTIMULib/RTPressureMS5637.o src/RTIMULib/RTPressureMS5611.o src/RTIMULib/RTPressureLPS25H.o src/RTIMULib/RTPressureBMP180.o src/RTIMULib/RTPressure.o src/RTIMULib/RTMath.o src/RTIMULib/RTIMUSettings.o src/RTIMULib/RTIMUNull.o src/RTIMULib/RTIMUMagCal.o src/RTIMULib/RTIMUMPU9250.o src/RTIMULib/RTIMUMPU9150.o src/RTIMULib/RTIMULSM9DS1.o src/RTIMULib/RTIMULSM9DS0.o src/RTIMULib/RTIMUHal.o src/RTIMULib/RTIMUGD20M303DLHC.o src/RTIMULib/RTIMUGD20HM303DLHC.o src/RTIMULib/RTIMUGD20HM303D.o src/RTIMULib/RTIMUBNO055.o src/RTIMULib/RTIMUBMX055.o src/RTIMULib/RTIMUAccelCal.o src/RTIMULib/RTIMU.o src/RTIMULib/RTHumidityHTU21D.o src/RTIMULib/RTHumidityHTS221.o src/RTIMULib/RTHumidity.o src/RTIMULib/RTFusionRTQF.o src/RTIMULib/RTFusionKalman4.o src/RTIMULib/RTFusion.o src/IMUData.o 
+Info: Nothing to build for MotorControl
+Info: Nothing to build for PWMTest
+Info: Nothing to build for test1
+Info: Nothing to build for IMUData
+Info: Nothing to build for IMUData_MotorControl
+17:36:31 **** Incremental Build of configuration Debug for project IMUData_MotorControl2 ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:33:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:34:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+i586-poky-linux-g++ --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -lmraa -o IMUData_MotorControl2 src/RTIMULib/RTPressureMS5637.o src/RTIMULib/RTPressureMS5611.o src/RTIMULib/RTPressureLPS25H.o src/RTIMULib/RTPressureBMP180.o src/RTIMULib/RTPressure.o src/RTIMULib/RTMath.o src/RTIMULib/RTIMUSettings.o src/RTIMULib/RTIMUNull.o src/RTIMULib/RTIMUMagCal.o src/RTIMULib/RTIMUMPU9250.o src/RTIMULib/RTIMUMPU9150.o src/RTIMULib/RTIMULSM9DS1.o src/RTIMULib/RTIMULSM9DS0.o src/RTIMULib/RTIMUHal.o src/RTIMULib/RTIMUGD20M303DLHC.o src/RTIMULib/RTIMUGD20HM303DLHC.o src/RTIMULib/RTIMUGD20HM303D.o src/RTIMULib/RTIMUBNO055.o src/RTIMULib/RTIMUBMX055.o src/RTIMULib/RTIMUAccelCal.o src/RTIMULib/RTIMU.o src/RTIMULib/RTHumidityHTU21D.o src/RTIMULib/RTHumidityHTS221.o src/RTIMULib/RTHumidity.o src/RTIMULib/RTFusionRTQF.o src/RTIMULib/RTFusionKalman4.o src/RTIMULib/RTFusion.o src/IMUData.o 
+Info: Nothing to build for MotorControl
+Info: Nothing to build for PWMTest
+Info: Nothing to build for test1
+Info: Nothing to build for IMUData
+Info: Nothing to build for IMUData_MotorControl
+17:51:11 **** Incremental Build of configuration Debug for project IMUData_MotorControl2 ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:33:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:34:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+i586-poky-linux-g++ --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -lmraa -o IMUData_MotorControl2 src/RTIMULib/RTPressureMS5637.o src/RTIMULib/RTPressureMS5611.o src/RTIMULib/RTPressureLPS25H.o src/RTIMULib/RTPressureBMP180.o src/RTIMULib/RTPressure.o src/RTIMULib/RTMath.o src/RTIMULib/RTIMUSettings.o src/RTIMULib/RTIMUNull.o src/RTIMULib/RTIMUMagCal.o src/RTIMULib/RTIMUMPU9250.o src/RTIMULib/RTIMUMPU9150.o src/RTIMULib/RTIMULSM9DS1.o src/RTIMULib/RTIMULSM9DS0.o src/RTIMULib/RTIMUHal.o src/RTIMULib/RTIMUGD20M303DLHC.o src/RTIMULib/RTIMUGD20HM303DLHC.o src/RTIMULib/RTIMUGD20HM303D.o src/RTIMULib/RTIMUBNO055.o src/RTIMULib/RTIMUBMX055.o src/RTIMULib/RTIMUAccelCal.o src/RTIMULib/RTIMU.o src/RTIMULib/RTHumidityHTU21D.o src/RTIMULib/RTHumidityHTS221.o src/RTIMULib/RTHumidity.o src/RTIMULib/RTFusionRTQF.o src/RTIMULib/RTFusionKalman4.o src/RTIMULib/RTFusion.o src/IMUData.o 
+Info: Nothing to build for MotorControl
+Info: Nothing to build for PWMTest
+Info: Nothing to build for test1
+Info: Nothing to build for IMUData
+Info: Nothing to build for IMUData_MotorControl
+18:49:31 **** Incremental Build of configuration Debug for project IMUData_MotorControl2 ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:27:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:28:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+../src/IMUData.cpp:29:10: warning: unused variable 'buffer' [-Wunused-variable]
+     char buffer[20]={}; // for logging
+          ^
+../src/IMUData.cpp:30:15: warning: unused variable 'counter' [-Wunused-variable]
+     long long counter=0; // Current number of sample
+               ^
+../src/IMUData.cpp:32:18: warning: unused variable 'a' [-Wunused-variable]
+     std::clock_t a = std::clock();
+                  ^
+../src/IMUData.cpp: In function 'void writeToCSV(float)':
+../src/IMUData.cpp:126:25: error: 'saveName' was not declared in this scope
+  std::ofstream logfile (saveName,std::ios::app);
+                         ^
+../src/IMUData.cpp:127:10: error: 'buffer' was not declared in this scope
+  sprintf(buffer,"%lli,%f\n",counter,current_reading);
+          ^
+../src/IMUData.cpp:127:29: error: 'counter' was not declared in this scope
+  sprintf(buffer,"%lli,%f\n",counter,current_reading);
+                             ^
+../src/IMUData.cpp: In function 'float runningDeflectionAverage()':
+../src/IMUData.cpp:135:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Info: Nothing to build for MotorControl
+Info: Nothing to build for PWMTest
+Info: Nothing to build for test1
+Info: Nothing to build for IMUData
+Info: Nothing to build for IMUData_MotorControl
+18:49:49 **** Incremental Build of configuration Debug for project IMUData_MotorControl2 ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:30:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:31:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+../src/IMUData.cpp: In function 'float runningDeflectionAverage()':
+../src/IMUData.cpp:134:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+i586-poky-linux-g++ --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -lmraa -o IMUData_MotorControl2 src/RTIMULib/RTPressureMS5637.o src/RTIMULib/RTPressureMS5611.o src/RTIMULib/RTPressureLPS25H.o src/RTIMULib/RTPressureBMP180.o src/RTIMULib/RTPressure.o src/RTIMULib/RTMath.o src/RTIMULib/RTIMUSettings.o src/RTIMULib/RTIMUNull.o src/RTIMULib/RTIMUMagCal.o src/RTIMULib/RTIMUMPU9250.o src/RTIMULib/RTIMUMPU9150.o src/RTIMULib/RTIMULSM9DS1.o src/RTIMULib/RTIMULSM9DS0.o src/RTIMULib/RTIMUHal.o src/RTIMULib/RTIMUGD20M303DLHC.o src/RTIMULib/RTIMUGD20HM303DLHC.o src/RTIMULib/RTIMUGD20HM303D.o src/RTIMULib/RTIMUBNO055.o src/RTIMULib/RTIMUBMX055.o src/RTIMULib/RTIMUAccelCal.o src/RTIMULib/RTIMU.o src/RTIMULib/RTHumidityHTU21D.o src/RTIMULib/RTHumidityHTS221.o src/RTIMULib/RTHumidity.o src/RTIMULib/RTFusionRTQF.o src/RTIMULib/RTFusionKalman4.o src/RTIMULib/RTFusion.o src/IMUData.o 
+Info: Nothing to build for MotorControl
+Info: Nothing to build for PWMTest
+Info: Nothing to build for test1
+Info: Nothing to build for IMUData
+Info: Nothing to build for IMUData_MotorControl
+Info: Nothing to build for IMUData_MotorControl2
+Info: Nothing to build for MotorControl
+Info: Nothing to build for PWMTest
+Info: Nothing to build for test1
+Info: Nothing to build for IMUData
+Info: Nothing to build for IMUData_MotorControl
+18:58:20 **** Incremental Build of configuration Debug for project IMUData_MotorControl2 ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:35:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:36:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+../src/IMUData.cpp: In function 'float runningDeflectionAverage()':
+../src/IMUData.cpp:139:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+i586-poky-linux-g++ --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -lmraa -o IMUData_MotorControl2 src/RTIMULib/RTPressureMS5637.o src/RTIMULib/RTPressureMS5611.o src/RTIMULib/RTPressureLPS25H.o src/RTIMULib/RTPressureBMP180.o src/RTIMULib/RTPressure.o src/RTIMULib/RTMath.o src/RTIMULib/RTIMUSettings.o src/RTIMULib/RTIMUNull.o src/RTIMULib/RTIMUMagCal.o src/RTIMULib/RTIMUMPU9250.o src/RTIMULib/RTIMUMPU9150.o src/RTIMULib/RTIMULSM9DS1.o src/RTIMULib/RTIMULSM9DS0.o src/RTIMULib/RTIMUHal.o src/RTIMULib/RTIMUGD20M303DLHC.o src/RTIMULib/RTIMUGD20HM303DLHC.o src/RTIMULib/RTIMUGD20HM303D.o src/RTIMULib/RTIMUBNO055.o src/RTIMULib/RTIMUBMX055.o src/RTIMULib/RTIMUAccelCal.o src/RTIMULib/RTIMU.o src/RTIMULib/RTHumidityHTU21D.o src/RTIMULib/RTHumidityHTS221.o src/RTIMULib/RTHumidity.o src/RTIMULib/RTFusionRTQF.o src/RTIMULib/RTFusionKalman4.o src/RTIMULib/RTFusion.o src/IMUData.o 
+Info: Nothing to build for MotorControl
+Info: Nothing to build for PWMTest
+Info: Nothing to build for test1
+Info: Nothing to build for IMUData
+Info: Nothing to build for IMUData_MotorControl
+11:28:33 **** Incremental Build of configuration Debug for project IMUData_MotorControl2 ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:35:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:36:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+../src/IMUData.cpp: In function 'void motorControl(RTIMU_DATA, mraa::Pwm*)':
+../src/IMUData.cpp:123:70: error: 'runningDeflectionAverage' was not declared in this scope
+  printf("Running Average %f",runningDeflectionAverage(current_reading));
+                                                                      ^
+../src/IMUData.cpp: In function 'float runningDeflectionAverage(float)':
+../src/IMUData.cpp:141:38: error: void value not ignored as it ought to be
+   float oldestSample=prevSamples.pop();
+                                      ^
+Info: Nothing to build for MotorControl
+Info: Nothing to build for PWMTest
+Info: Nothing to build for test1
+Info: Nothing to build for IMUData
+Info: Nothing to build for IMUData_MotorControl
+11:29:47 **** Incremental Build of configuration Debug for project IMUData_MotorControl2 ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:35:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:36:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+../src/IMUData.cpp: In function 'void motorControl(RTIMU_DATA, mraa::Pwm*)':
+../src/IMUData.cpp:123:70: error: 'runningDeflectionAverage' was not declared in this scope
+  printf("Running Average %f",runningDeflectionAverage(current_reading));
+                                                                      ^
+../src/IMUData.cpp: In function 'float runningDeflectionAverage(float)':
+../src/IMUData.cpp:142:15: error: void value not ignored as it ought to be
+   oldestSample=prevSamples.pop();
+               ^
+Info: Nothing to build for MotorControl
+Info: Nothing to build for PWMTest
+Info: Nothing to build for test1
+Info: Nothing to build for IMUData
+Info: Nothing to build for IMUData_MotorControl
+11:32:22 **** Incremental Build of configuration Debug for project IMUData_MotorControl2 ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:35:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:36:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+../src/IMUData.cpp: In function 'void motorControl(RTIMU_DATA, mraa::Pwm*)':
+../src/IMUData.cpp:123:70: error: 'runningDeflectionAverage' was not declared in this scope
+  printf("Running Average %f",runningDeflectionAverage(current_reading));
+                                                                      ^
+Info: Nothing to build for MotorControl
+Info: Nothing to build for PWMTest
+Info: Nothing to build for test1
+Info: Nothing to build for IMUData
+Info: Nothing to build for IMUData_MotorControl
+11:33:03 **** Incremental Build of configuration Debug for project IMUData_MotorControl2 ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:35:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:36:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+../src/IMUData.cpp: In function 'void motorControl(RTIMU_DATA, mraa::Pwm*)':
+../src/IMUData.cpp:123:70: error: 'runningDeflectionAverage' was not declared in this scope
+  printf("Running Average %f",runningDeflectionAverage(current_reading));
+                                                                      ^
+Info: Nothing to build for MotorControl
+Info: Nothing to build for PWMTest
+Info: Nothing to build for test1
+Info: Nothing to build for IMUData
+Info: Nothing to build for IMUData_MotorControl
+11:33:35 **** Incremental Build of configuration Debug for project IMUData_MotorControl2 ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:36:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:37:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+i586-poky-linux-g++ --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -lmraa -o IMUData_MotorControl2 src/RTIMULib/RTPressureMS5637.o src/RTIMULib/RTPressureMS5611.o src/RTIMULib/RTPressureLPS25H.o src/RTIMULib/RTPressureBMP180.o src/RTIMULib/RTPressure.o src/RTIMULib/RTMath.o src/RTIMULib/RTIMUSettings.o src/RTIMULib/RTIMUNull.o src/RTIMULib/RTIMUMagCal.o src/RTIMULib/RTIMUMPU9250.o src/RTIMULib/RTIMUMPU9150.o src/RTIMULib/RTIMULSM9DS1.o src/RTIMULib/RTIMULSM9DS0.o src/RTIMULib/RTIMUHal.o src/RTIMULib/RTIMUGD20M303DLHC.o src/RTIMULib/RTIMUGD20HM303DLHC.o src/RTIMULib/RTIMUGD20HM303D.o src/RTIMULib/RTIMUBNO055.o src/RTIMULib/RTIMUBMX055.o src/RTIMULib/RTIMUAccelCal.o src/RTIMULib/RTIMU.o src/RTIMULib/RTHumidityHTU21D.o src/RTIMULib/RTHumidityHTS221.o src/RTIMULib/RTHumidity.o src/RTIMULib/RTFusionRTQF.o src/RTIMULib/RTFusionKalman4.o src/RTIMULib/RTFusion.o src/IMUData.o 
+Info: Nothing to build for MotorControl
+Info: Nothing to build for PWMTest
+Info: Nothing to build for test1
+Info: Nothing to build for IMUData
+Info: Nothing to build for IMUData_MotorControl
+11:42:03 **** Incremental Build of configuration Debug for project IMUData_MotorControl2 ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:36:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:37:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+i586-poky-linux-g++ --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -lmraa -o IMUData_MotorControl2 src/RTIMULib/RTPressureMS5637.o src/RTIMULib/RTPressureMS5611.o src/RTIMULib/RTPressureLPS25H.o src/RTIMULib/RTPressureBMP180.o src/RTIMULib/RTPressure.o src/RTIMULib/RTMath.o src/RTIMULib/RTIMUSettings.o src/RTIMULib/RTIMUNull.o src/RTIMULib/RTIMUMagCal.o src/RTIMULib/RTIMUMPU9250.o src/RTIMULib/RTIMUMPU9150.o src/RTIMULib/RTIMULSM9DS1.o src/RTIMULib/RTIMULSM9DS0.o src/RTIMULib/RTIMUHal.o src/RTIMULib/RTIMUGD20M303DLHC.o src/RTIMULib/RTIMUGD20HM303DLHC.o src/RTIMULib/RTIMUGD20HM303D.o src/RTIMULib/RTIMUBNO055.o src/RTIMULib/RTIMUBMX055.o src/RTIMULib/RTIMUAccelCal.o src/RTIMULib/RTIMU.o src/RTIMULib/RTHumidityHTU21D.o src/RTIMULib/RTHumidityHTS221.o src/RTIMULib/RTHumidity.o src/RTIMULib/RTFusionRTQF.o src/RTIMULib/RTFusionKalman4.o src/RTIMULib/RTFusion.o src/IMUData.o 
+Info: Nothing to build for MotorControl
+Info: Nothing to build for PWMTest
+Info: Nothing to build for test1
+Info: Nothing to build for IMUData
+Info: Nothing to build for IMUData_MotorControl
+13:17:38 **** Incremental Build of configuration Debug for project IMUData_MotorControl2 ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:37:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:38:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+i586-poky-linux-g++ --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -lmraa -o IMUData_MotorControl2 src/RTIMULib/RTPressureMS5637.o src/RTIMULib/RTPressureMS5611.o src/RTIMULib/RTPressureLPS25H.o src/RTIMULib/RTPressureBMP180.o src/RTIMULib/RTPressure.o src/RTIMULib/RTMath.o src/RTIMULib/RTIMUSettings.o src/RTIMULib/RTIMUNull.o src/RTIMULib/RTIMUMagCal.o src/RTIMULib/RTIMUMPU9250.o src/RTIMULib/RTIMUMPU9150.o src/RTIMULib/RTIMULSM9DS1.o src/RTIMULib/RTIMULSM9DS0.o src/RTIMULib/RTIMUHal.o src/RTIMULib/RTIMUGD20M303DLHC.o src/RTIMULib/RTIMUGD20HM303DLHC.o src/RTIMULib/RTIMUGD20HM303D.o src/RTIMULib/RTIMUBNO055.o src/RTIMULib/RTIMUBMX055.o src/RTIMULib/RTIMUAccelCal.o src/RTIMULib/RTIMU.o src/RTIMULib/RTHumidityHTU21D.o src/RTIMULib/RTHumidityHTS221.o src/RTIMULib/RTHumidity.o src/RTIMULib/RTFusionRTQF.o src/RTIMULib/RTFusionKalman4.o src/RTIMULib/RTFusion.o src/IMUData.o 
+Info: Nothing to build for MotorControl
+Info: Nothing to build for PWMTest
+Info: Nothing to build for test1
+Info: Nothing to build for IMUData
+Info: Nothing to build for IMUData_MotorControl
+13:21:19 **** Incremental Build of configuration Debug for project IMUData_MotorControl2 ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/IMUData.o ../src/IMUData.cpp 
+../src/IMUData.cpp: In function 'int main()':
+../src/IMUData.cpp:37:9: warning: unused variable 'sampleCount' [-Wunused-variable]
+     int sampleCount = 0;
+         ^
+../src/IMUData.cpp:38:9: warning: unused variable 'sampleRate' [-Wunused-variable]
+     int sampleRate = 0;
+         ^
+i586-poky-linux-g++ --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -lmraa -o IMUData_MotorControl2 src/RTIMULib/RTPressureMS5637.o src/RTIMULib/RTPressureMS5611.o src/RTIMULib/RTPressureLPS25H.o src/RTIMULib/RTPressureBMP180.o src/RTIMULib/RTPressure.o src/RTIMULib/RTMath.o src/RTIMULib/RTIMUSettings.o src/RTIMULib/RTIMUNull.o src/RTIMULib/RTIMUMagCal.o src/RTIMULib/RTIMUMPU9250.o src/RTIMULib/RTIMUMPU9150.o src/RTIMULib/RTIMULSM9DS1.o src/RTIMULib/RTIMULSM9DS0.o src/RTIMULib/RTIMUHal.o src/RTIMULib/RTIMUGD20M303DLHC.o src/RTIMULib/RTIMUGD20HM303DLHC.o src/RTIMULib/RTIMUGD20HM303D.o src/RTIMULib/RTIMUBNO055.o src/RTIMULib/RTIMUBMX055.o src/RTIMULib/RTIMUAccelCal.o src/RTIMULib/RTIMU.o src/RTIMULib/RTHumidityHTU21D.o src/RTIMULib/RTHumidityHTS221.o src/RTIMULib/RTHumidity.o src/RTIMULib/RTFusionRTQF.o src/RTIMULib/RTFusionKalman4.o src/RTIMULib/RTFusion.o src/IMUData.o 
+Info: Nothing to build for MotorControl
+Info: Nothing to build for PWMTest
+Info: Nothing to build for test1
