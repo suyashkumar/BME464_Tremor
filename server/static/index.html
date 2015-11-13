@@ -1,0 +1,79 @@
+<html>
+	<head>
+<script src="//cdnjs.cloudflare.com/ajax/libs/dygraph/1.1.1/dygraph-combined.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+				<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<!-- Optional theme -->
+<!---		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.7.0/nv.d3.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>		
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.7.0/nv.d3.min.js"></script>
+		<script src="js/core.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+		<style>
+			body {margin-top:30px;}
+			.btn.act, .btn:act {background-color:blue;}
+		</style>
+	</head>
+<body ng-app="mainapp" ng-controller="mainController">
+		<div class="row">
+			<div class="well text-center col-md-12"> <h2> Your Tremor Data </h2></div>
+		</div>	
+
+<div class="row">
+<div class="col-md-4">
+						<h2>Select Session:<h2> <br>
+
+<div class="btn-group-vertical" role="group" aria-label="" style="height:400px;overflow:auto;margin-left:50px">
+						<button type="button" ng-repeat="item in fileList track by $index" class="btn btn-default" ng-click="switchGraph($index)" ng-class="{act: $index === $scope.currentExamIndex}">{{item}}</button> 
+
+</div>
+			
+
+</div>
+<div id="graphdiv2"
+  style="width:500px; height:300px;" class="col-md-4 text-center"></div>
+<div class="col-md-4"></div>
+</div>
+
+<div class="row" style="margin-top:10px">
+<div class="text-center">
+<button type="button" class="btn btn-success" onclick="location.href='lastRun2.csv';">Download Last Run</button>
+<button type="button" class="btn btn-success" onclick="switch1()">Download Last Run</button>
+</div>
+
+</div>
+<script>
+function switch1(){
+	 g2 = new Dygraph(
+    document.getElementById("graphdiv2"),
+    "data/test2.csv", // path to CSV file
+    {ylabel:'Deflection Angle',
+	 xlabel:'Sample Number',
+	 animatedZooms:true}          // options
+  );
+} 
+</script>
+
+<script type="text/javascript">
+  g2 = new Dygraph(
+    document.getElementById("graphdiv2"),
+    "data/test.csv", // path to CSV file
+    {ylabel:'Deflection Angle',
+	 xlabel:'Sample Number',
+	 animatedZooms:true}          // options
+  );
+
+  
+</script>
+
+</body>
+</html>
+

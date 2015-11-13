@@ -1,0 +1,146 @@
+#include "RTIMULib/RTIMULib.h"
+#include "stdio.h"
+#include "mraa.h"
+#include "mraa.hpp"
+#include <unistd.h>
+#include <iostream>
+#include <exception>
+#include <fstream>
+#include <ctime>
+#include <string>
+#include <sys/time.h>
+
+// Forward function declarations:
+mraa::Pwm* initPwm(int pin);
+RTIMU* initImu();
+float calculateDutyCycle(float deflection);
+void motorControl(RTIMU_DATA imuData, mraa::Pwm* pwm);
+void writeToCSV(float current_reading);
+long long current_timestamp();
+
+char buffer[20]={}; // for logging
+long long counter=0; // Current number of sample
+char saveName[40]={};
+std::clock_t a = std::clock();
+long long currentTime=current_timestamp();
+
+
+
+
+int main()
+{
+	// Parameter declaration, initiation:
+    int sampleCount = 0;
+    int sampleRate = 0;
+    sprintf(saveName,"data/%lii",currentTime);
+
+    mraa::Pwm* pwm = initPwm(0); // Initialize PWM Object
+	RTIMU *imu = initImu(); // Initialize IMU Object
+
+
+
+
+    // Main loop:
+    while (1) {
+        while (imu->IMURead()) {
+            RTIMU_DATA imuData = imu->getIMUData();
+            motorControl(imuData,pwm); // Update motor position
+        }
+    }
+
+  	mraa_deinit();
+}
+/*
+ * initPwm()
+ * Initiates a PWM object on the supplied pin.
+ * @param pin an integer representing the pin to initiate PWM on.
+ * @returns pwm a mraa::Pwm* pointer
+ */
+mraa::Pwm* initPwm(int pin){
+	mraa::Pwm* pwm;
+	pwm=new mraa::Pwm(pin);
+	if (pwm == NULL) { // Look for null case
+			//return MRAA_ERROR_UNSPECIFIED;
+			std::cerr << "PWM object was returned as null...exiting" << std::endl;
+			exit(1);
+	}
+	if (pwm->enable(true) != MRAA_SUCCESS) { // enable and check status of enable
+		std::cerr << "Cannot enable PWM on mraa::PWM object, exiting" << std::endl;
+		//return MRAA_ERROR_UNSPECIFIED;
+		exit(1);
+	}
+	return pwm;
+
+}
+/*
+ *
+ */
+RTIMU* initImu(){
+	RTIMUSettings *settings = new RTIMUSettings("RTIMULib");
+	RTIMU *imu = RTIMU::createIMU(settings);
+	if ((imu == NULL) || (imu->IMUType() == RTIMU_TYPE_NULL)) {
+		printf("No IMU found\n");
+		exit(1);
+	}
+
+	// IMU Init:
+	imu->IMUInit();
+	imu->setSlerpPower(0.02);
+	imu->setGyroEnable(true);
+	return imu;
+
+}
+/*
+ * calculateDutyCycle()
+ * Calculates the duty cycle needed to move our servo to the provided deflection.
+ * @param deflection the input angular deflection
+ * @returns duty_cycle the duty cycle to send to the motor
+ */
+float calculateDutyCycle(float deflection){
+
+	return ((0.317*deflection)+52.464)/100;
+
+}
+
+/*
+ * motorControl()
+ * Inspects last read set of data from IMU and calculates a restoring displacement that is
+ * then translated to a duty cycle that is then sent to the motor. Any smoothing tasks occur
+ * in this function.
+ * @param imuData the RTIMU_DATA object that holds the last read set of data.
+ * @param pwm the PWM control object that writes the motor control signal.
+ */
+void motorControl(RTIMU_DATA imuData, mraa::Pwm* pwm){
+
+	printf("%s\r", RTMath::displayDegrees("Gyro", imuData.fusionPose));
+	float current_reading=imuData.fusionPose.y()*(180.0/3.14);
+	writeToCSV(current_reading);
+	float duty_cycle=calculateDutyCycle(current_reading);
+	//printf("\nDuty cycle: %f\n",duty_cycle);
+	pwm->config_percent(3,duty_cycle); // Write duty_cycle with period of 1ms
+	printf("\n\n");
+	fflush(stdout);
+}
+/*
+ * writeToCSV()
+ * Writes the current
+ */
+void writeToCSV(float current_reading){
+	std::ofstream logfile (saveName,std::ios::app);
+	sprintf(buffer,"%lli,%f\n",counter,current_reading);
+	logfile << buffer;
+	logfile.close();
+	counter++;
+}
+
+
+long long current_timestamp() {
+    struct timeval te;
+    gettimeofday(&te, NULL); // get current time
+    long long milliseconds = te.tv_sec*1000LL + te.tv_usec/1000; // caculate milliseconds
+    printf("milliseconds: %lld\n", milliseconds);
+    return milliseconds;
+}
+
+
+
