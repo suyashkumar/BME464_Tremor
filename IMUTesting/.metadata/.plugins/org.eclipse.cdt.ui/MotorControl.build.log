@@ -1,1 +1,17 @@
-Info: Nothing to build for MotorControl
+15:09:40 **** Incremental Build of configuration Debug for project MotorControl ****
+Info: Internal Builder is used for build
+i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/PWMTest.o ../src/PWMTest.cpp 
+../src/PWMTest.cpp: In function 'int main()':
+../src/PWMTest.cpp:11:10: warning: unused variable 't' [-Wunused-variable]
+  clock_t t;
+          ^
+../src/PWMTest.cpp:19:7: warning: unused variable 'buffer' [-Wunused-variable]
+  char buffer[20];
+       ^
+../src/PWMTest.cpp:20:8: warning: unused variable 'duty_cycle' [-Wunused-variable]
+  float duty_cycle=0.5;
+        ^
+i586-poky-linux-g++ --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -lmraa -o MotorControl src/PWMTest.o 
+
+15:09:40 Build Finished (took 549ms)
+

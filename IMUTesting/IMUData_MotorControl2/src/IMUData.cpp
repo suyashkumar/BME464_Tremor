@@ -29,7 +29,7 @@ float currentAverage=0;
 std::queue <float> prevSamples;
 
 int samplesSeen=1;
-int runningAvgSamples=50;
+int runningAvgSamples=100;
 
 int main()
 {
@@ -43,7 +43,8 @@ int main()
     mraa::Pwm* pwm = initPwm(0); // Initialize PWM Object
 	RTIMU *imu = initImu(); // Initialize IMU Object
 
-
+	printf("How many avg samples? ");
+	std::cin >> runningAvgSamples;
 
 
     // Main loop:
@@ -118,12 +119,14 @@ float calculateDutyCycle(float deflection){
  */
 void motorControl(RTIMU_DATA imuData, mraa::Pwm* pwm){
 	printf("%s\r", RTMath::displayDegrees("Gyro", imuData.fusionPose));
-	float current_reading=imuData.fusionPose.y()*(180.0/3.14);
+	float current_reading=imuData.fusionPose.x()*(180.0/3.14); // get roll measurement
+	float currentRunningAvg=runningDeflectionAverage(current_reading);
+
 	writeToCSV(current_reading);
-	float duty_cycle=calculateDutyCycle(current_reading);
+	float duty_cycle=calculateDutyCycle(current_reading+currentRunningAvg);
 	pwm->config_percent(3,duty_cycle); // Write duty_cycle with period of 1ms
 	printf("\n\n");
-	printf("Running Average %f",runningDeflectionAverage(current_reading));
+	printf("\nRunning Average %f",currentRunningAvg);
 	fflush(stdout);
 }
 /*
@@ -152,8 +155,8 @@ float runningDeflectionAverage(float sample){
 	else{
 		prevSamples.push(sample); // add to queue
 		samplesSeen++;
-		currentAverage=(currentAverage+sample)/(samplesSeen+1));
-		return sample;
+		currentAverage=(currentAverage+sample)/samplesSeen;
+		return 0;
 	}
 
 
