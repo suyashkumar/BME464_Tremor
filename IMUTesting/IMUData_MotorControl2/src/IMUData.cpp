@@ -43,8 +43,8 @@ int main()
     mraa::Pwm* pwm = initPwm(0); // Initialize PWM Object
 	RTIMU *imu = initImu(); // Initialize IMU Object
 
-	printf("How many avg samples? ");
-	std::cin >> runningAvgSamples;
+	//printf("How many avg samples? ");
+	//std::cin >> runningAvgSamples;
 
 
     // Main loop:
@@ -118,15 +118,16 @@ float calculateDutyCycle(float deflection){
  * @param pwm the PWM control object that writes the motor control signal.
  */
 void motorControl(RTIMU_DATA imuData, mraa::Pwm* pwm){
-	printf("%s\r", RTMath::displayDegrees("Gyro", imuData.fusionPose));
+	//printf("%s\r", RTMath::displayDegrees("Gyro", imuData.fusionPose));
+	RTMath::displayDegrees("Gyro", imuData.fusionPose);
 	float current_reading=imuData.fusionPose.x()*(180.0/3.14); // get roll measurement
-	float currentRunningAvg=runningDeflectionAverage(current_reading);
+	//float currentRunningAvg=runningDeflectionAverage(current_reading);
 
 	writeToCSV(current_reading);
-	float duty_cycle=calculateDutyCycle(current_reading+currentRunningAvg);
+	float duty_cycle=calculateDutyCycle(current_reading);
 	pwm->config_percent(3,duty_cycle); // Write duty_cycle with period of 1ms
-	printf("\n\n");
-	printf("\nRunning Average %f",currentRunningAvg);
+	//printf("\n\n");
+	//printf("\nRunning Average %f",currentRunningAvg);
 	fflush(stdout);
 }
 /*

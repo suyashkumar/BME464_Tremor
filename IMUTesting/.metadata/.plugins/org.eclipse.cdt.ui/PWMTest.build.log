@@ -1,7 +1,1 @@
-15:09:40 **** Incremental Build of configuration Debug for project PWMTest ****
-Info: Internal Builder is used for build
-i586-poky-linux-g++ -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/upm -I/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux/usr/include/mraa -O0 -g3 -Wall -c -fmessage-length=0 --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -m32 -march=i586 -c -ffunction-sections -fdata-sections -o src/PWMTest.o ../src/PWMTest.cpp 
-i586-poky-linux-g++ --sysroot=/Users/suyashkumar/Documents/iotdk-ide-mac/devkit-x86/sysroots/i586-poky-linux -lmraa -o PWMTest src/PWMTest.o 
-
-15:09:41 Build Finished (took 545ms)
-
+Info: Nothing to build for PWMTest
