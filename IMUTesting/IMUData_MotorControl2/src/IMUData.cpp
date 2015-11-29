@@ -19,6 +19,10 @@ void motorControl(RTIMU_DATA imuData, mraa::Pwm* pwm);
 void writeToCSV(float current_reading);
 long long current_timestamp();
 float runningDeflectionAverage(float sample);
+float limit(float current_reading);
+long long oldTime; // last time stamp recorded in file.
+long long firstTime;
+float saveSamplePeriod=1; // in ms
 
 char buffer[20]={}; // for logging
 long long counter=0; // Current number of sample
@@ -29,7 +33,7 @@ float currentAverage=0;
 std::queue <float> prevSamples;
 
 int samplesSeen=1;
-int runningAvgSamples=100;
+int runningAvgSamples=50;
 
 int main()
 {
@@ -37,6 +41,7 @@ int main()
     int sampleCount = 0;
     int sampleRate = 0;
     long long currentTime=current_timestamp();
+
     sprintf(saveName,"static/data/%lld.csv",currentTime); // CSV file name
     prevSamples.push(0.0);
 
@@ -46,7 +51,8 @@ int main()
 	//printf("How many avg samples? ");
 	//std::cin >> runningAvgSamples;
 
-
+	oldTime=current_timestamp(); // Set first time stamp for csv recording
+	firstTime=oldTime;
     // Main loop:
     while (1) {
         while (imu->IMURead()) {
@@ -124,7 +130,7 @@ void motorControl(RTIMU_DATA imuData, mraa::Pwm* pwm){
 	//float currentRunningAvg=runningDeflectionAverage(current_reading);
 
 	writeToCSV(current_reading);
-	float duty_cycle=calculateDutyCycle(current_reading);
+	float duty_cycle=calculateDutyCycle(limit(current_reading));
 	pwm->config_percent(3,duty_cycle); // Write duty_cycle with period of 1ms
 	//printf("\n\n");
 	//printf("\nRunning Average %f",currentRunningAvg);
@@ -135,13 +141,24 @@ void motorControl(RTIMU_DATA imuData, mraa::Pwm* pwm){
  * Writes the current
  */
 void writeToCSV(float current_reading){
-	std::ofstream logfile (saveName,std::ios::app);
-	sprintf(buffer,"%lli,%f\n",counter,current_reading);
-	logfile << buffer;
-	logfile.close();
-	counter++;
-}
+	long long currTime=current_timestamp();
+	if (currTime-oldTime>=saveSamplePeriod){
+		std::ofstream logfile (saveName,std::ios::app);
+		sprintf(buffer,"%lli,%f\n",currTime,current_reading);
+		logfile << buffer;
+		logfile.close();
+		oldTime=currTime;
+		//printf("timestamp: %lli",currTime);
 
+	}
+
+}
+float limit(float current_reading){
+	if (abs(current_reading) > 20){
+		return ( (current_reading > 0) - (current_reading<0) )*20; //return pos or neg 20 based on the sign of current reading
+	}
+	return current_reading;
+}
 float runningDeflectionAverage(float sample){
 	if (samplesSeen>runningAvgSamples){
 		// do normal stuff
@@ -167,7 +184,7 @@ long long current_timestamp() {
     struct timeval te;
     gettimeofday(&te, NULL); // get current time
     long long milliseconds = te.tv_sec*1000LL + te.tv_usec/1000; // caculate milliseconds
-    printf("milliseconds: %lld\n", milliseconds);
+    //printf("milliseconds: %lld\n", milliseconds);
     return milliseconds;
 }
 
